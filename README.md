@@ -4,7 +4,7 @@ An **unofficial** PHP 8.5 compatibility distribution of the legacy MyImouto imag
 
 > **Status:** compatibility work in progress. The PHP source and JavaScript assets passed local syntax checks, and installer unit tests passed under PHP 8.4. A clean first install against Remi PHP 8.5 + MySQL has **not** been demonstrated in this build. This is legacy software and is not security-audited for public production use.
 
-## Quick start (new database only)
+## Quick start
 
 Use a new installation directory and empty MySQL database. Install Remi PHP 8.5 CLI/FPM and required extensions; run:
 
