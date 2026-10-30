@@ -1,0 +1,35 @@
+# Private instance configuration, credentials, and installer state
+/config/config.php
+/config/database.yml
+/config/.fresh-install-state.json
+/.fresh-install-complete
+
+# Runtime output; keep the empty-folder markers
+/log/**
+!/log/.keep
+/tmp/**
+!/tmp/.keep
+/public/data/**
+!/public/data/
+!/public/data/**/
+!/public/data/**/.keep
+
+# Local development / deployment artifacts
+/.env
+/.env.*
+*.pem
+*.key
+*.log
+*.bak
+*.backup
+*.sql.gz
+*.sql.bak
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+
+# Do NOT ignore /vendor or /public/assets:
+# this project ships those assets to permit installation without Composer/Node.

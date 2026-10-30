@@ -1,0 +1,11 @@
+DirectoryIndex index.php index.html
+RewriteEngine On
+
+# Images redirection.
+# The following RewriteCond will try to deny any direct linking to images.
+# RewriteCond %{HTTP:Referer} ^http://myimouto/
+RewriteRule ^(?:data/)?(preview|sample|jpeg|image)/([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{28})(?:/.*?)?(\.[\w]+)$  data/$1/$2/$3/$2$3$4$5 [L]
+
+# Redirect to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* index.php [L]
